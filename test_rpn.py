@@ -29,3 +29,6 @@ class TestBasics(unittest.TestCase):
     def test_power(self):
         result = rpn.calculate('2 1 ^')
         self.assertEqual(2, result)
+    def test_percent(self):
+        result = rpn.calculate('72 5 %')
+        self.assertEqual(3.6, result)
