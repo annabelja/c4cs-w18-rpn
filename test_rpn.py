@@ -20,3 +20,9 @@ class TestBasics(unittest.TestCase):
     def test_divide(self):
         result = rpn.calculate('10 5 /')
         self.assertEqual(2, result)
+    def test_truedivide(self):
+        result = rpn.calculate('5 2 /')
+        self.assertEqual(2.5, result)
+    def test_mixofoperators(self):
+        result = rpn.calculate('10 5 / 2 +')
+        self.assertEqual(4, result)
