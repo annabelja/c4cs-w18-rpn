@@ -26,3 +26,6 @@ class TestBasics(unittest.TestCase):
     def test_mixofoperators(self):
         result = rpn.calculate('10 5 / 2 +')
         self.assertEqual(4, result)
+    def test_power(self):
+        result = rpn.calculate('2 1 ^')
+        self.assertEqual(2, result)
