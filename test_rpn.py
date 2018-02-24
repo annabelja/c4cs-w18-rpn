@@ -35,3 +35,12 @@ class TestBasics(unittest.TestCase):
     def test_intDivision(self):
         result = rpn.calculate('5 2 .')
         self.assertEqual(2, result)
+    def test_bitwiseAnd(self):
+        result = rpn.calculate('1 1 &')
+        self.assertEqual(1, result)
+    def test_bitwiseOr(self):
+        result = rpn.calculate('1 0 |')
+        self.assertEqual(1, result)
+    def test_bitwiseNot(self):
+        result = rpn.calculate('1 !')
+        self.assertEqual(0, result)
