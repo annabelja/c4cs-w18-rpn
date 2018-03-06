@@ -14,7 +14,7 @@ operators = {
     '-': operator.sub,
     '*': operator.mul,
     '/': operator.truediv,
-#    '^': operator.pow,
+    '^': operator.pow,
     '|': operator.__or__,
     '&': operator.__and__,
     '!': operator.__not__,
